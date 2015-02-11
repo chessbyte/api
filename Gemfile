@@ -36,14 +36,11 @@ gem 'highline'
 # Figaro Gem
 gem 'figaro'
 
-# Rubocop for testing
-gem 'rubocop', group: [:development, :test]
+# Fog Gem
+gem 'fog'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7', require: 'bcrypt'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Use puma as the app server
 gem 'puma'
@@ -53,12 +50,6 @@ gem 'web-console', '~> 2.0.0', group: :development
 
 # Use responders
 gem 'responders'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 
 # Authentication
 gem 'devise'
@@ -75,6 +66,8 @@ group :development, :test do
   gem 'license_finder'
   gem 'codeclimate-test-reporter', require: nil
   gem 'seed_dump'
+  gem 'rubocop'
+  # gem 'debugger'
 end
 
 # Documentation
